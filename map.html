@@ -22,16 +22,19 @@
 
     <script>
 
-        var map = L.map('map').setView([51.505, -0.09], 13);
+        var map = L.map('map').setView([-1.58225188, 37.85378315], 13);
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
-       
+
 
         var polygon = L.polygon([
-            [51.509, -0.08],
-            [51.503, -0.06],
-            [51.51, -0.047]
+            [-1.58225188, 37.85378315],
+            [-1.58220295, 37.85388909],
+            [-1.58199214, 37.85406444],
+            [-1.58190333, 37.85398364],
+            [-1.58206788, 37.85363093],
+            [-1.58225188, 37.85378315]
         ]).addTo(map);
 
         polygon.bindPopup('Here is our pop up.<br> Easily customizable.')
